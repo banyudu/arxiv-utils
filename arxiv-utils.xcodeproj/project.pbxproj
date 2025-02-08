@@ -1,0 +1,895 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BE1EBF92D570FD2006F9AF7 /* arxiv-utils Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7BE1EBF82D570FD2006F9AF7 /* arxiv-utils Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7BE1EC032D570FD2006F9AF7 /* arxiv-utils Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7BE1EC022D570FD2006F9AF7 /* arxiv-utils Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BE1EBFA2D570FD2006F9AF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BE1EBBE2D570FD1006F9AF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BE1EBF72D570FD2006F9AF7;
+			remoteInfo = "arxiv-utils Extension (iOS)";
+		};
+		7BE1EC042D570FD2006F9AF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BE1EBBE2D570FD1006F9AF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BE1EC012D570FD2006F9AF7;
+			remoteInfo = "arxiv-utils Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7BE1EC2C2D570FD2006F9AF7 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7BE1EBF92D570FD2006F9AF7 /* arxiv-utils Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE1EC362D570FD2006F9AF7 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7BE1EC032D570FD2006F9AF7 /* arxiv-utils Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7BE1EBDA2D570FD2006F9AF7 /* arxiv-utils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "arxiv-utils.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE1EBEC2D570FD2006F9AF7 /* arxiv-utils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "arxiv-utils.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE1EBF82D570FD2006F9AF7 /* arxiv-utils Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "arxiv-utils Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE1EC022D570FD2006F9AF7 /* arxiv-utils Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "arxiv-utils Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7BE1EC272D570FD2006F9AF7 /* Exceptions for "Shared (App)" folder in "arxiv-utils (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: Resources/Main.html",
+				Assets.xcassets,
+				Resources/Icon.png,
+				Resources/Script.js,
+				Resources/Style.css,
+				ViewController.swift,
+			);
+			target = 7BE1EBD92D570FD2006F9AF7 /* arxiv-utils (iOS) */;
+		};
+		7BE1EC2B2D570FD2006F9AF7 /* Exceptions for "iOS (Extension)" folder in "arxiv-utils Extension (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7BE1EBF72D570FD2006F9AF7 /* arxiv-utils Extension (iOS) */;
+		};
+		7BE1EC302D570FD2006F9AF7 /* Exceptions for "iOS (App)" folder in "arxiv-utils (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7BE1EBD92D570FD2006F9AF7 /* arxiv-utils (iOS) */;
+		};
+		7BE1EC312D570FD2006F9AF7 /* Exceptions for "Shared (App)" folder in "arxiv-utils (macOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: Resources/Main.html",
+				Assets.xcassets,
+				Resources/Icon.png,
+				Resources/Script.js,
+				Resources/Style.css,
+				ViewController.swift,
+			);
+			target = 7BE1EBEB2D570FD2006F9AF7 /* arxiv-utils (macOS) */;
+		};
+		7BE1EC352D570FD2006F9AF7 /* Exceptions for "macOS (Extension)" folder in "arxiv-utils Extension (macOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7BE1EC012D570FD2006F9AF7 /* arxiv-utils Extension (macOS) */;
+		};
+		7BE1EC3A2D570FD2006F9AF7 /* Exceptions for "Shared (Extension)" folder in "arxiv-utils Extension (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/_locales,
+				Resources/background.js,
+				Resources/content.js,
+				Resources/images,
+				Resources/manifest.json,
+				Resources/popup.css,
+				Resources/popup.html,
+				Resources/popup.js,
+				SafariWebExtensionHandler.swift,
+			);
+			target = 7BE1EBF72D570FD2006F9AF7 /* arxiv-utils Extension (iOS) */;
+		};
+		7BE1EC3B2D570FD2006F9AF7 /* Exceptions for "Shared (Extension)" folder in "arxiv-utils Extension (macOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/_locales,
+				Resources/background.js,
+				Resources/content.js,
+				Resources/images,
+				Resources/manifest.json,
+				Resources/popup.css,
+				Resources/popup.html,
+				Resources/popup.js,
+				SafariWebExtensionHandler.swift,
+			);
+			target = 7BE1EC012D570FD2006F9AF7 /* arxiv-utils Extension (macOS) */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7BE1EBC22D570FD1006F9AF7 /* Shared (App) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7BE1EC272D570FD2006F9AF7 /* Exceptions for "Shared (App)" folder in "arxiv-utils (iOS)" target */,
+				7BE1EC312D570FD2006F9AF7 /* Exceptions for "Shared (App)" folder in "arxiv-utils (macOS)" target */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		7BE1EBCB2D570FD2006F9AF7 /* Shared (Extension) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7BE1EC3A2D570FD2006F9AF7 /* Exceptions for "Shared (Extension)" folder in "arxiv-utils Extension (iOS)" target */,
+				7BE1EC3B2D570FD2006F9AF7 /* Exceptions for "Shared (Extension)" folder in "arxiv-utils Extension (macOS)" target */,
+			);
+			explicitFolders = (
+				Resources/_locales,
+				Resources/images,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		7BE1EBDC2D570FD2006F9AF7 /* iOS (App) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7BE1EC302D570FD2006F9AF7 /* Exceptions for "iOS (App)" folder in "arxiv-utils (iOS)" target */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		7BE1EBED2D570FD2006F9AF7 /* macOS (App) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		7BE1EBFC2D570FD2006F9AF7 /* iOS (Extension) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7BE1EC2B2D570FD2006F9AF7 /* Exceptions for "iOS (Extension)" folder in "arxiv-utils Extension (iOS)" target */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		7BE1EC062D570FD2006F9AF7 /* macOS (Extension) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7BE1EC352D570FD2006F9AF7 /* Exceptions for "macOS (Extension)" folder in "arxiv-utils Extension (macOS)" target */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BE1EBD72D570FD2006F9AF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE1EBE92D570FD2006F9AF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE1EBF52D570FD2006F9AF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE1EBFF2D570FD2006F9AF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7BE1EBBD2D570FD1006F9AF7 = {
+			isa = PBXGroup;
+			children = (
+				7BE1EBC22D570FD1006F9AF7 /* Shared (App) */,
+				7BE1EBCB2D570FD2006F9AF7 /* Shared (Extension) */,
+				7BE1EBDC2D570FD2006F9AF7 /* iOS (App) */,
+				7BE1EBED2D570FD2006F9AF7 /* macOS (App) */,
+				7BE1EBFC2D570FD2006F9AF7 /* iOS (Extension) */,
+				7BE1EC062D570FD2006F9AF7 /* macOS (Extension) */,
+				7BE1EBDB2D570FD2006F9AF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BE1EBDB2D570FD2006F9AF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BE1EBDA2D570FD2006F9AF7 /* arxiv-utils.app */,
+				7BE1EBEC2D570FD2006F9AF7 /* arxiv-utils.app */,
+				7BE1EBF82D570FD2006F9AF7 /* arxiv-utils Extension.appex */,
+				7BE1EC022D570FD2006F9AF7 /* arxiv-utils Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BE1EBD92D570FD2006F9AF7 /* arxiv-utils (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BE1EC2D2D570FD2006F9AF7 /* Build configuration list for PBXNativeTarget "arxiv-utils (iOS)" */;
+			buildPhases = (
+				7BE1EBD62D570FD2006F9AF7 /* Sources */,
+				7BE1EBD72D570FD2006F9AF7 /* Frameworks */,
+				7BE1EBD82D570FD2006F9AF7 /* Resources */,
+				7BE1EC2C2D570FD2006F9AF7 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BE1EBFB2D570FD2006F9AF7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7BE1EBDC2D570FD2006F9AF7 /* iOS (App) */,
+			);
+			name = "arxiv-utils (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "arxiv-utils (iOS)";
+			productReference = 7BE1EBDA2D570FD2006F9AF7 /* arxiv-utils.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BE1EBEB2D570FD2006F9AF7 /* arxiv-utils (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BE1EC372D570FD2006F9AF7 /* Build configuration list for PBXNativeTarget "arxiv-utils (macOS)" */;
+			buildPhases = (
+				7BE1EBE82D570FD2006F9AF7 /* Sources */,
+				7BE1EBE92D570FD2006F9AF7 /* Frameworks */,
+				7BE1EBEA2D570FD2006F9AF7 /* Resources */,
+				7BE1EC362D570FD2006F9AF7 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BE1EC052D570FD2006F9AF7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7BE1EBED2D570FD2006F9AF7 /* macOS (App) */,
+			);
+			name = "arxiv-utils (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "arxiv-utils (macOS)";
+			productReference = 7BE1EBEC2D570FD2006F9AF7 /* arxiv-utils.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BE1EBF72D570FD2006F9AF7 /* arxiv-utils Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BE1EC282D570FD2006F9AF7 /* Build configuration list for PBXNativeTarget "arxiv-utils Extension (iOS)" */;
+			buildPhases = (
+				7BE1EBF42D570FD2006F9AF7 /* Sources */,
+				7BE1EBF52D570FD2006F9AF7 /* Frameworks */,
+				7BE1EBF62D570FD2006F9AF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7BE1EBFC2D570FD2006F9AF7 /* iOS (Extension) */,
+			);
+			name = "arxiv-utils Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "arxiv-utils Extension (iOS)";
+			productReference = 7BE1EBF82D570FD2006F9AF7 /* arxiv-utils Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		7BE1EC012D570FD2006F9AF7 /* arxiv-utils Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BE1EC322D570FD2006F9AF7 /* Build configuration list for PBXNativeTarget "arxiv-utils Extension (macOS)" */;
+			buildPhases = (
+				7BE1EBFE2D570FD2006F9AF7 /* Sources */,
+				7BE1EBFF2D570FD2006F9AF7 /* Frameworks */,
+				7BE1EC002D570FD2006F9AF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7BE1EC062D570FD2006F9AF7 /* macOS (Extension) */,
+			);
+			name = "arxiv-utils Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "arxiv-utils Extension (macOS)";
+			productReference = 7BE1EC022D570FD2006F9AF7 /* arxiv-utils Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BE1EBBE2D570FD1006F9AF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					7BE1EBD92D570FD2006F9AF7 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					7BE1EBEB2D570FD2006F9AF7 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					7BE1EBF72D570FD2006F9AF7 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					7BE1EC012D570FD2006F9AF7 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 7BE1EBC12D570FD1006F9AF7 /* Build configuration list for PBXProject "arxiv-utils" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BE1EBBD2D570FD1006F9AF7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7BE1EBDB2D570FD2006F9AF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BE1EBD92D570FD2006F9AF7 /* arxiv-utils (iOS) */,
+				7BE1EBEB2D570FD2006F9AF7 /* arxiv-utils (macOS) */,
+				7BE1EBF72D570FD2006F9AF7 /* arxiv-utils Extension (iOS) */,
+				7BE1EC012D570FD2006F9AF7 /* arxiv-utils Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BE1EBD82D570FD2006F9AF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE1EBEA2D570FD2006F9AF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE1EBF62D570FD2006F9AF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE1EC002D570FD2006F9AF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BE1EBD62D570FD2006F9AF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE1EBE82D570FD2006F9AF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE1EBF42D570FD2006F9AF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE1EBFE2D570FD2006F9AF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BE1EBFB2D570FD2006F9AF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BE1EBF72D570FD2006F9AF7 /* arxiv-utils Extension (iOS) */;
+			targetProxy = 7BE1EBFA2D570FD2006F9AF7 /* PBXContainerItemProxy */;
+		};
+		7BE1EC052D570FD2006F9AF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BE1EC012D570FD2006F9AF7 /* arxiv-utils Extension (macOS) */;
+			targetProxy = 7BE1EC042D570FD2006F9AF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7BE1EC292D570FD2006F9AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "arxiv-utils Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.banyudu.arxiv-utils.arxiv-utils.Extension";
+				PRODUCT_NAME = "arxiv-utils Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BE1EC2A2D570FD2006F9AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "arxiv-utils Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.banyudu.arxiv-utils.arxiv-utils.Extension";
+				PRODUCT_NAME = "arxiv-utils Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BE1EC2E2D570FD2006F9AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "arxiv-utils";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.banyudu.arxiv-utils.arxiv-utils";
+				PRODUCT_NAME = "arxiv-utils";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BE1EC2F2D570FD2006F9AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "arxiv-utils";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.banyudu.arxiv-utils.arxiv-utils";
+				PRODUCT_NAME = "arxiv-utils";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BE1EC332D570FD2006F9AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/arxiv-utils.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "arxiv-utils Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.banyudu.arxiv-utils.arxiv-utils.Extension";
+				PRODUCT_NAME = "arxiv-utils Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7BE1EC342D570FD2006F9AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/arxiv-utils.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "arxiv-utils Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.banyudu.arxiv-utils.arxiv-utils.Extension";
+				PRODUCT_NAME = "arxiv-utils Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7BE1EC382D570FD2006F9AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/arxiv-utils.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "arxiv-utils";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.banyudu.arxiv-utils.arxiv-utils";
+				PRODUCT_NAME = "arxiv-utils";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7BE1EC392D570FD2006F9AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/arxiv-utils.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "arxiv-utils";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.banyudu.arxiv-utils.arxiv-utils";
+				PRODUCT_NAME = "arxiv-utils";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7BE1EC3C2D570FD2006F9AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7BE1EC3D2D570FD2006F9AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BE1EBC12D570FD1006F9AF7 /* Build configuration list for PBXProject "arxiv-utils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE1EC3C2D570FD2006F9AF7 /* Debug */,
+				7BE1EC3D2D570FD2006F9AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BE1EC282D570FD2006F9AF7 /* Build configuration list for PBXNativeTarget "arxiv-utils Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE1EC292D570FD2006F9AF7 /* Debug */,
+				7BE1EC2A2D570FD2006F9AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BE1EC2D2D570FD2006F9AF7 /* Build configuration list for PBXNativeTarget "arxiv-utils (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE1EC2E2D570FD2006F9AF7 /* Debug */,
+				7BE1EC2F2D570FD2006F9AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BE1EC322D570FD2006F9AF7 /* Build configuration list for PBXNativeTarget "arxiv-utils Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE1EC332D570FD2006F9AF7 /* Debug */,
+				7BE1EC342D570FD2006F9AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BE1EC372D570FD2006F9AF7 /* Build configuration list for PBXNativeTarget "arxiv-utils (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE1EC382D570FD2006F9AF7 /* Debug */,
+				7BE1EC392D570FD2006F9AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BE1EBBE2D570FD1006F9AF7 /* Project object */;
+}
