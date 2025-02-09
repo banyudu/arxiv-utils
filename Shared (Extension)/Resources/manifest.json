@@ -22,7 +22,7 @@
     "content_scripts": [{
         "js": [ "content.js" ],
         "matches": [
-          "*://arxiv.org/abs/*",
+          "*://arxiv.org/*"
         ],
         "run_at": "document_end"
     }],
