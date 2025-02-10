@@ -1,6 +1,9 @@
 # Arxiv Utils for Safari
 
-This is a Safari extension which adds a download emoji to arxiv.org pdf links.
+This is a Safari extension that adds a download emoji to PDF links on arxiv.org.
+
+The filename of the downloaded PDF will be the id and title of the paper.
+> e.g. `[2501.09166] Attention is All You Need Until You Need Retention.pdf`
 
 ## Screenshots
 
