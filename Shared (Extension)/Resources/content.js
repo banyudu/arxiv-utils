@@ -6,9 +6,16 @@ function formatFilename(paperId, title) {
   return `[${paperId}] ${title}.pdf`;
 }
 
-function download(url, filename) {
+function download(url, filename, onStart = null, onComplete = null, onError = null) {
+  if (onStart) onStart();
+  
   fetch(url)
-    .then(response => response.blob())
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.blob();
+    })
     .then(blob => {
       const url = URL.createObjectURL(blob);
       const link = document.createElement("a");
@@ -17,18 +24,90 @@ function download(url, filename) {
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+      if (onComplete) onComplete();
     })
+    .catch(error => {
+      console.error('Download failed:', error);
+      if (onError) onError(error);
+    });
 }
 
 function buildDownloadAnchor(url, filename) {
   const downloadAnchor = document.createElement("a");
   downloadAnchor.href = "#";
   // download emoji
-  downloadAnchor.innerText = " ⬇️";
+  const originalEmoji = " ⬇️";
+  const loadingEmoji = " ⏳";
+  const errorEmoji = " ❌";
+  
+  // Add CSS styles to prevent flickering and enable animation
+  downloadAnchor.style.cssText = `
+    display: inline-block;
+    line-height: 1;
+    height: 1em;
+    vertical-align: baseline;
+    text-decoration: none;
+    transition: transform 0.1s ease;
+    margin-left: 0.1em;
+  `;
+  
+  // Add CSS animation keyframes if not already added
+  if (!document.getElementById('arxiv-download-animations')) {
+    const style = document.createElement('style');
+    style.id = 'arxiv-download-animations';
+    style.textContent = `
+      @keyframes arxiv-loading-spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      .arxiv-loading {
+        animation: arxiv-loading-spin 2s linear infinite;
+        display: inline-block;
+      }
+    `;
+    document.head.appendChild(style);
+  }
+  
+  downloadAnchor.innerText = originalEmoji;
   downloadAnchor.onclick = (event) => {
     event.preventDefault();
     event.stopPropagation();
-    download(url, filename);
+    
+    // Prevent multiple clicks while downloading
+    if (downloadAnchor.classList.contains('arxiv-loading')) {
+      return;
+    }
+    
+    download(
+      url, 
+      filename,
+      // onStart
+      () => {
+        downloadAnchor.innerText = loadingEmoji;
+        downloadAnchor.title = "Downloading...";
+        downloadAnchor.classList.add('arxiv-loading');
+      },
+      // onComplete
+      () => {
+        downloadAnchor.classList.remove('arxiv-loading');
+        downloadAnchor.innerText = originalEmoji;
+        downloadAnchor.title = "Download complete";
+        setTimeout(() => {
+          downloadAnchor.title = "";
+        }, 2000);
+      },
+      // onError
+      (error) => {
+        downloadAnchor.classList.remove('arxiv-loading');
+        downloadAnchor.innerText = errorEmoji;
+        downloadAnchor.title = `Download failed: ${error.message}`;
+        setTimeout(() => {
+          downloadAnchor.innerText = originalEmoji;
+          downloadAnchor.title = "";
+        }, 3000);
+      }
+    );
   }
   return downloadAnchor
 }
@@ -42,7 +121,24 @@ browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === "download") {
     const url = request.url;
     const filename = request.filename;
-    download(url, filename);
+    
+    // Notify background script about download progress
+    download(
+      url, 
+      filename,
+      // onStart
+      () => {
+        browser.runtime.sendMessage({ action: "downloadStarted" });
+      },
+      // onComplete  
+      () => {
+        browser.runtime.sendMessage({ action: "downloadCompleted" });
+      },
+      // onError
+      (error) => {
+        browser.runtime.sendMessage({ action: "downloadError", error: error.message });
+      }
+    );
   }
 });
 
