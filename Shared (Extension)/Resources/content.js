@@ -33,6 +33,34 @@ function download(url, filename, onStart = null, onComplete = null, onError = nu
     });
 }
 
+function waitForElement(selector, timeout = 10000) {
+  return new Promise((resolve, reject) => {
+    const element = document.querySelector(selector);
+    if (element) {
+      resolve(element);
+      return;
+    }
+
+    const observer = new MutationObserver((mutations) => {
+      const element = document.querySelector(selector);
+      if (element) {
+        observer.disconnect();
+        resolve(element);
+      }
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+
+    setTimeout(() => {
+      observer.disconnect();
+      reject(new Error(`Element with selector "${selector}" not found within ${timeout}ms`));
+    }, timeout);
+  });
+}
+
 function buildDownloadAnchor(url, filename) {
   const downloadAnchor = document.createElement("a");
   downloadAnchor.href = "#";
@@ -181,5 +209,22 @@ if (document.location.href.startsWith("https://arxiv.org/list")) {
 
     const downloadAnchor = buildDownloadAnchor(url, filename);
     link.appendChild(downloadAnchor);
+  });
+} else if (document.location.href.startsWith("https://www.alphaxiv.org/abs/")) {
+  // https://www.alphaxiv.org/abs/2509.20427
+  // Wait for the download button to appear since it may have latency
+  waitForElement('svg[aria-label="Download from arXiv"]').then(icon => {
+    const button = icon.parentElement;
+    const paperId = getPaperIdFromUrl(document.location.href);
+    const title = document.title.replace(/^\[.*?\]\s*/, '').replace(/\s*-\s*arXiv.*$/, '').trim();
+    const url = `https://www.arxiv.org/pdf/${paperId}`;
+    const filename = formatFilename(paperId, title);
+
+    const downloadAnchor = buildDownloadAnchor(url, filename);
+    
+    // Insert the download button after the existing download button
+    button.parentNode.insertBefore(downloadAnchor, button.nextSibling);
+  }).catch(error => {
+    console.error('Could not find alphaxiv download button:', error);
   });
 }

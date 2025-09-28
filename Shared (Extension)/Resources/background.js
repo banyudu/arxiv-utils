@@ -69,5 +69,13 @@ browser.action.onClicked.addListener(async (request, sender, sendResponse) => {
         
         // Safari doesn't support downloads API, so we use the content script to download
         browser.tabs.sendMessage(activeTab.id, { action: "download", url: pdfUrl, filename });
+    } else if (url?.startsWith("https://www.alphaxiv.org/abs/")) {
+        const paperId = url.split("/").pop().replace(/[?#].*$/, '');
+        const title = activeTab.title.replace(/^\[.*?\]\s*/, '').replace(/\s*-\s*arXiv.*$/, '').trim();
+        const pdfUrl = `https://www.arxiv.org/pdf/${paperId}`;
+        const filename = `[${paperId}] ${title}.pdf`;
+        
+        // Safari doesn't support downloads API, so we use the content script to download
+        browser.tabs.sendMessage(activeTab.id, { action: "download", url: pdfUrl, filename });
     }
 });

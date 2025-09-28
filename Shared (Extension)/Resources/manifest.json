@@ -22,7 +22,8 @@
     "content_scripts": [{
         "js": [ "content.js" ],
         "matches": [
-          "*://arxiv.org/*"
+          "*://arxiv.org/*",
+          "*://www.alphaxiv.org/*"
         ],
         "run_at": "document_end"
     }],
