@@ -74,10 +74,11 @@ function buildDownloadAnchor(url, filename) {
     display: inline-block;
     line-height: 1;
     height: 1em;
+    font-size: 14px;
     vertical-align: baseline;
     text-decoration: none;
     transition: transform 0.1s ease;
-    margin-left: 0.1em;
+    margin-left: 0.2em;
   `;
   
   // Add CSS animation keyframes if not already added
