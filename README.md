@@ -13,7 +13,21 @@ The filename of the downloaded PDF will be the id and title of the paper.
 
 ## Installation
 
-Since this extension is not available on the Safari Extensions Gallery(caused by the $99/year fee), you have to compile and install it manually.
+Since this extension is not available on the Safari Extensions Gallery (caused by the $99/year fee), you have to compile and install it manually.
+
+## 🤝 Looking for a Publisher
+
+**I don't have a Safari developer account and would love help from someone who does!**
+
+If you have a Safari developer account and would like to help publish this extension to the Safari Extensions Gallery, I would be incredibly grateful. You are welcome to:
+
+- Brand the extension with your own name/company
+- Take full credit as the publisher
+- Make any reasonable modifications needed for App Store compliance
+
+This would help make the extension easily accessible to all Safari users without requiring manual compilation. If you're interested in helping, please open an issue or contact me directly.
+
+For now, here's how to install it manually:
 
 1. Clone this repository.
 2. Open the `arxiv-utils.xcodeproj` file with Xcode.
